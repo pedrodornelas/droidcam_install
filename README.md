@@ -1,5 +1,4 @@
-# Droidcam
-Instalação/Desinstação Droidcam.
+# Instalação/Desinstação Droidcam.
 
 ## Passo a passo:
   1. Baixar o arquivo install_droidcam.sh
