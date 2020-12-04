@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Droidcam
+Comment=Use your Android phone as a wireless webcam!
+Icon=droidcam
+Exec=/usr/bin/droidcam
+Terminal=false
+Categories=GNOME;GTK;Video;
