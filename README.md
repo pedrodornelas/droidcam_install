@@ -2,7 +2,7 @@
 
 ## Passo a passo:
   1. Baixar o arquivo install_droidcam.sh
-  2. Alterar a permissão de execução do script com:
+  2. Alterar a permissão para execução do script com:
   
   ```$ sudo chmod +x install_droidcam.sh```
   
