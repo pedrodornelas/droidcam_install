@@ -1,4 +1,4 @@
-# Instalação/Desinstação Droidcam.
+# Instalação Droidcam.
 
 ## Passo a passo:
   1. Baixar o repositório:
@@ -22,3 +22,7 @@
   Com isso, seu droidcam estará instalado, pode ser encontrado no menu de aplicativos ou para usar no terminal:
   
   ```$ droidcam```
+  
+# Desinstalação
+
+1. ```$ sudo /opt/droidcam-uninstall```
