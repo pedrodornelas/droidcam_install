@@ -1,21 +1,21 @@
 #!/bin/bash
 
-echo "--------Desinstalando Droidcam--------\n"
-/opt/droidcam-uninstall
-echo "--------Desinstalação Concluída--------\n"
+echo -e "--------Desinstalando Droidcam--------\n"
+sudo /opt/droidcam-uninstall
+echo -e "--------Desinstalação Concluída--------\n"
 
-echo "--------Instalando Droidcam--------\n"
+echo -e "--------Instalando Droidcam--------\n"
+
+cp droidcam.desktop /usr/share/applications/
+cp droidcam.png /usr/share/icons/
 
 cd /tmp/
-wget https://files.dev47apps.net/linux/droidcam_latest.zip
+wget -O droidcam_latest.zip https://files.dev47apps.net/linux/droidcam_1.7.2.zip
+# sha1sum: c687253a17ca6a2337b85ed90de585c776174250
 unzip droidcam_latest.zip -d droidcam
-cd droidcam && ./install-client
-apt install linux-headers-`uname -r` gcc make
-./install-video
-apt-get install adb
+cd droidcam && sudo ./install-client
+sudo apt install linux-headers-`uname -r` gcc make
+sudo ./install-video
+sudo apt-get install adb
 
-#Criando atalho no menu de aplicativos
-cp droidcam.desktop ~/.local/share/applications/droidcam.desktop
-cp droidcam.png ~/.local/share/icons/droidcam.png
-
-echo "--------Instalação Concluída--------\n"
+echo -e "--------Instalação Concluída--------\n"
