@@ -10,7 +10,7 @@ cp droidcam.desktop /usr/share/applications/
 cp droidcam.png /usr/share/icons/
 
 cd /tmp/
-wget -O droidcam_latest.zip https://files.dev47apps.net/linux/droidcam_1.7.2.zip
+wget -O droidcam_latest.zip https://files.dev47apps.net/linux/droidcam_1.8.0.zip
 # sha1sum: c687253a17ca6a2337b85ed90de585c776174250
 unzip droidcam_latest.zip -d droidcam
 cd droidcam && sudo ./install-client
